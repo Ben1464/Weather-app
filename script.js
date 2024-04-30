@@ -29,7 +29,7 @@ async function fetchWeather(cityName) {
     }
 }
 
-// Function to update the weather information on the page
+
 // Function to update the weather information on the page
 function updateWeatherDisplay(weatherData) {
     if (weatherData) {
