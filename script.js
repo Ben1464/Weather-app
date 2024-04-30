@@ -30,17 +30,19 @@ async function fetchWeather(cityName) {
 }
 
 // Function to update the weather information on the page
+// Function to update the weather information on the page
 function updateWeatherDisplay(weatherData) {
     if (weatherData) {
-        temperatureDisplay.textContent = `Temperature: ${weatherData.temperature}°C`;
-        humidityDisplay.textContent = `Humidity: ${weatherData.humidity}%`;
-        windSpeedDisplay.textContent = `Wind Speed: ${weatherData.windSpeed} m/s`;
+        temperatureDisplay.innerHTML = `<img src="./icons/sun_869869.png" alt="sun"> Temperature: ${weatherData.temperature}°C`;
+        humidityDisplay.innerHTML = `<img src="./icons/clouds_414927.png" alt="clouds"> Humidity: ${weatherData.humidity}%`;
+        windSpeedDisplay.innerHTML = `<img src="./icons/wind.png" alt="wind"> Wind Speed: ${weatherData.windSpeed} m/s`;
     } else {
-        temperatureDisplay.textContent = 'Temperature: N/A';
-        humidityDisplay.textContent = 'Humidity: N/A';
-        windSpeedDisplay.textContent = 'Wind Speed: N/A';
+        temperatureDisplay.innerHTML = `<img src="./icons/sun_869869.png" alt="sun"> Temperature: N/A`;
+        humidityDisplay.innerHTML = `<img src="./icons/clouds_414927.png" alt="clouds"> Humidity: N/A`;
+        windSpeedDisplay.innerHTML = `<img src="./icons/wind.png" alt="wind"> Wind Speed: N/A`;
     }
 }
+
 
 // Event listener for the search button
 searchButton.addEventListener('click', async () => {
@@ -49,6 +51,7 @@ searchButton.addEventListener('click', async () => {
     if (cityName) {
         const weatherData = await fetchWeather(cityName);
         updateWeatherDisplay(weatherData);
+
         cityInput.value='';
     } else {
         alert('Please enter a city name.');
