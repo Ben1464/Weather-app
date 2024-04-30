@@ -27,8 +27,11 @@ To get this project up and running locally you only need a functining browser.
 Author
 
 👤 Benson Mwangi
+
 Github: Ben1464
+
 Twitter: @kimanibenson18
+
 LinkedIn:kimaniben1464
 
 🤝 Contributing
