@@ -29,7 +29,7 @@ Author
 
 👤 Benson Mwangi
 
-Github: Ben1464
+Github: [Ben1464](https://github.com/Ben1464)
 
 Twitter: @kimanibenson18
 
