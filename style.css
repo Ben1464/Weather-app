@@ -33,6 +33,9 @@ body {
 .input-container input[type="text"] {
     padding-right: 40px;
     padding-left: 30px;
+    border-radius: 8px;
+    border-color: #C5D1E2;
+    border-style: solid;
 }
 
 .input-container button {
