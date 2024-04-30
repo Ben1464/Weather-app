@@ -5,7 +5,9 @@ This weather app lets users check current weather conditions by entering a city 
 Built With
 
 -HTML
+
 -CSS 
+
 -Vanilla JavaScript
 
 Getting Started
