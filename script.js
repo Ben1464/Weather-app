@@ -7,7 +7,7 @@ const windSpeedDisplay = document.getElementById('wind-speed');
 
 // Function to fetch weather data from the API
 async function fetchWeather(cityName) {
-    const apiKey = `'c983fca0-0650-11ef-a7bb-0242ac130002-c983fd72-0650-11ef-a7bb-0242ac130002'`; // Replace 'YOUR_API_KEY' with your actual API key
+    const apiKey = 'c3d99244a5a084ac7d31e5a7344b44f7'; // Replace 'YOUR_API_KEY' with your actual API key
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
     
     try {
