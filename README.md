@@ -33,7 +33,7 @@ Github: [Ben1464](https://github.com/Ben1464)
 
 Twitter:[ @kimanibenson18](https://twitter.com/KimaniBenson18)
 
-LinkedIn:kimaniben1464
+LinkedIn:[kimaniben1464](https://www.linkedin.com/in/kimaniben1464/)
 
 
 🤝 Contributing
