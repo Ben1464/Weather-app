@@ -34,12 +34,14 @@ Twitter: @kimanibenson18
 
 LinkedIn:kimaniben1464
 
+
 🤝 Contributing
 Contributions, issues and feature requests are always welcome!
 
 I love meeting other developers, especially ones that give me advice on how to improve my work.
 
 Feel free to check the issues page.
+
 
 How to Contribute
 
@@ -49,6 +51,7 @@ To get a local copy up and running follow these simple example steps.
 - git clone https://github.com/your_username/private-events
 - git checkout develop
 - git checkout -b branch name
+
 
 Finally, if you've read this far, don't forget to give this repo a ⭐️. They're free . . . I think.
 
