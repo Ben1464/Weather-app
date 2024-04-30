@@ -1,6 +1,6 @@
 Weaher-app
 
-This weather app lets users check current weather conditions by entering a city name. It fetches real-time data like temperature, humidity, and wind speed from an external API and displays it with visually informative icons. It helps users plan activities and make informed decisions based on up-to-date weather information, all in a simple and easy-to-use interface.
+This app enables users check current weather conditions by entering a city name. It fetches real-time data like temperature, humidity, and wind speed from an external API and displays it with visually informative icons. It helps users plan activities and make informed decisions based on up-to-date weather information, all in a simple and easy-to-use interface.
 
 Built With
 
@@ -27,7 +27,7 @@ To get this project up and running locally you only need a functining browser.
 
 Author
 
-👤 Benson Mwangi
+👤 [Benson Mwangi](https://portifolio-eight-ashen-62.vercel.app/)
 
 Github: [Ben1464](https://github.com/Ben1464)
 
