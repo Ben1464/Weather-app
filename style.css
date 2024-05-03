@@ -30,7 +30,6 @@ body {
     margin-bottom: 20px;
 }
 
-
 .input-container input[type="text"] {
     padding-right: 40px;
     padding-left: 30px;
@@ -55,14 +54,12 @@ body {
     border: none;
     cursor: pointer;
     z-index: 1;
-    
 }
 
 .input-container button:hover {
     opacity: 0.8;
     background-color:darkorange;
 }
-
 
 .input-container button img {
     width: 100%;
@@ -72,8 +69,6 @@ body {
     opacity: 0.5;
 }
 
-
-
 /* Icon styling */
 h3 img {
     width: 20px; 
@@ -82,13 +77,13 @@ h3 img {
     font-weight: bolder;
 }
 
-
 h3 {
     font-size: 18px;
     font-weight: bold;
     margin: 10px 0;
 }
-.main img{
+
+.main img {
     display: flex;
     padding: 10px;
     margin: 10px;
