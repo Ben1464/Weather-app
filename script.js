@@ -102,7 +102,7 @@ function updateForecastTable(forecastData) {
         // Create a single row for average forecast
         const row = document.createElement('tr');
         row.innerHTML = `
-            <td>Average</td>
+           
             <td>${averageForecast.temperature.toFixed(1)}</td>
             <td>${averageForecast.humidity.toFixed(1)}</td>
             <td>${averageForecast.windSpeed.toFixed(1)}</td>
