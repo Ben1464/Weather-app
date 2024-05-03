@@ -16,7 +16,7 @@ body {
     justify-content: center;
     flex-direction: column;
     background-color:#F7FAFC;
-    height: 90vh;
+    height: 95vh;
     border-radius: 18px;
 }
 
@@ -91,6 +91,6 @@ h3 {
     justify-content: center;
     flex-direction: column;
     background-color:#f0f0f0;
-    height: 35vh;
+    height: 30vh;
     border-radius: 12px;
 }
