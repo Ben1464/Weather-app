@@ -1,67 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <div class="container">
         <div class="main">
-            <img src="./images/weather_11166760.png" alt="weather" class="weather" />
+            <img src="./images/weather_11166760.png" alt="weather" class="weather">
         </div>
       
-      <div class="input-container">
-        <input type="text" id="city" placeholder="Enter City Name" />
-        <button type="button" id="search-button">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#000000"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-          </svg>
-        </button>
-      </div>
+        <div class="input-container">
+            <input type="text" id="city" placeholder="Enter City Name">
+            <button type="button" id="search-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+        </div>
 
-      <h1>Todays Weather</h1>
-      <h3 id="temperature">
-        <img src="./icons/sun_869869.png" alt="sun" />Temperature:
-      </h3>
-      <h3 id="humidity">
-        <img src="./icons/clouds_414927.png" alt="clouds" />Humidity:
-      </h3>
-      <h3 id="wind-speed">
-        <img src="./icons/wind.png" alt="wind" />Wind Speed:
-      </h3>
+        <h1>Todays weather</h1>
+        <h3 id="temperature">
+            <img src="./icons/sun_869869.png" alt="sun"> Temperature:
+        </h3>
+        <h3 id="humidity">
+            <img src="./icons/clouds_414927.png" alt="clouds"> Humidity:
+        </h3>
+        <h3 id="wind-speed">
+            <img src="./icons/wind.png" alt="wind"> Wind Speed:
+        </h3>
+        <h3 id="rain-rate">
+            <img src="./icons/rain.png" alt="rain"> Rain Rate:
+        </h3>
 
-      <!-- Weather forecast table -->
-      <h2>Forecast for the Next 24 Hours</h2>
-      <table id="forecast-table">
-        <thead>
-          <tr>
-            <!-- <th>Time</th> -->
-            <th>Temperature (°C)</th>
-            <th>Humidity (%)</th>
-            <th>Wind Speed (m/s)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Forecast data will be dynamically inserted here -->
-        </tbody>
-      </table>
+        <!-- Weather forecast table -->
+        <h2>Forecast for the next 6 hours</h2>
+        <table id="forecast-table">
+            <thead>
+                <tr>
+                    <th>Temperature (°C)</th>
+                    <th>Humidity (%)</th>
+                    <th>Wind Speed (m/s)</th>
+                    <th>Rain Rate (mm/h)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Forecast data will be dynamically inserted here -->
+            </tbody>
+        </table>
 
-      <div class="footer">
-        <p>&copy; 2023 {RavenDev}</p>
-      </div>
+        <div class="footer">
+            <p>&copy; 2023 {RavenDev}</p>
+        </div>
     </div>
 
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
