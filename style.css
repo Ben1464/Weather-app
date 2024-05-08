@@ -19,6 +19,7 @@ body {
     height: 130vh;
     border-radius: 18px;
     width: 300px;
+    box-shadow: #333 0px 0px 10px;
     /* width: 100%; */
 }
 
