@@ -16,8 +16,9 @@ body {
     justify-content: center;
     flex-direction: column;
     background-color: #F7FAFC;
-    height: 120vh;
+    height: 130vh;
     border-radius: 18px;
+    width: auto;
     /* width: 100%; */
 }
 
