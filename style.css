@@ -124,6 +124,19 @@ tbody tr:nth-child(even) {
 tbody tr:hover {
     background-color: #ddd;
 }
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd; /* Add vertical border */
+}
+
+th:last-child,
+td:last-child {
+    border-right: none; /* Remove border for the last column */
+}
+
+
 h2{
     text-align: center;
 }
