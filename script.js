@@ -102,3 +102,6 @@ searchButton.addEventListener('click', async () => {
         alert('Please enter a city name.');
     }
 });
+
+const newDate = new Date();
+document.getElementById('date').innerHTML = newDate.toDateString();
