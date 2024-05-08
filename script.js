@@ -2,7 +2,6 @@ const cityInput = document.getElementById('city');
 const searchButton = document.getElementById('search-button');
 const temperatureDisplay = document.getElementById('temperature');
 const humidityDisplay = document.getElementById('humidity');
-const windSpeedDisplay = document.getElementById('wind-speed');
 const rainRateDisplay = document.getElementById('rain-rate');
 const forecastTableBody = document.querySelector('#forecast-table tbody');
 
@@ -19,7 +18,6 @@ async function fetchWeather(cityName) {
             const weatherData = {
                 temperature: data.main.temp,
                 humidity: data.main.humidity,
-                windSpeed: data.wind.speed,
                 rainingPossibility: data.rain ? (data.rain['1h'] || 0) : 0
             };
             return weatherData;
@@ -57,48 +55,15 @@ async function fetchForecast(cityName) {
     }
 }
 
-// Function to calculate the average of forecast data
-function calculateAverageForecast(forecastData) {
-    if (!forecastData || forecastData.length === 0) {
-        return null;
-    }
-
-    let totalTemperature = 0;
-    let totalHumidity = 0;
-    let totalWindSpeed = 0;
-    let totalRainingPossibility = 0;
-
-    forecastData.forEach(item => {
-        totalTemperature += item.main.temp;
-        totalHumidity += item.main.humidity;
-        totalWindSpeed += item.wind.speed;
-        totalRainingPossibility += item.rain ? (item.rain['1h'] || 0) : 0;
-    });
-
-    const averageTemperature = totalTemperature / forecastData.length;
-    const averageHumidity = totalHumidity / forecastData.length;
-    const averageWindSpeed = totalWindSpeed / forecastData.length;
-    const averageRainingPossibility = totalRainingPossibility / forecastData.length;
-
-    return {
-        temperature: averageTemperature,
-        humidity: averageHumidity,
-        windSpeed: averageWindSpeed,
-        rainingPossibility: averageRainingPossibility
-    };
-}
-
 // Function to update the weather information on the page
 function updateWeatherDisplay(weatherData) {
     if (weatherData) {
         temperatureDisplay.innerHTML = `<img src="./icons/sun_869869.png" alt="sun"> Temperature: ${weatherData.temperature}°C`;
         humidityDisplay.innerHTML = `<img src="./icons/clouds_414927.png" alt="clouds"> Humidity: ${weatherData.humidity}%`;
-        windSpeedDisplay.innerHTML = `<img src="./icons/wind.png" alt="wind"> Wind Speed: ${weatherData.windSpeed} m/s`;
         rainRateDisplay.innerHTML = `<img src="./icons/rain.png" alt="rain"> Rain Rate: ${weatherData.rainingPossibility} mm/h`;
     } else {
         temperatureDisplay.innerHTML = `<img src="./icons/sun_869869.png" alt="sun"> Temperature: N/A`;
         humidityDisplay.innerHTML = `<img src="./icons/clouds_414927.png" alt="clouds"> Humidity: N/A`;
-        windSpeedDisplay.innerHTML = `<img src="./icons/wind.png" alt="wind"> Wind Speed: N/A`;
         rainRateDisplay.innerHTML = `<img src="./icons/rain.png" alt="rain"> Rain Rate: N/A`;
     }
 }
@@ -115,7 +80,6 @@ function updateForecastTable(forecastData) {
             <td>${time}</td>
             <td>${item.main.temp.toFixed(1)}</td>
             <td>${item.main.humidity.toFixed(1)}</td>
-            <td>${item.wind.speed.toFixed(1)}</td>
             <td>${item.rain ? (item.rain['1h'] || 0).toFixed(1) : '0'}</td>
         `;
         forecastTableBody.appendChild(row);

@@ -18,7 +18,7 @@ body {
     background-color: #F7FAFC;
     height: 120vh;
     border-radius: 18px;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .weather {
