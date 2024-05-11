@@ -97,7 +97,16 @@ h3 {
     height: 30vh;
     border-radius: 12px;
     box-shadow: #333 0px 0px 10px;
+    animation: blink 1s infinite; /* Apply animation */
 }
+
+/* Define blinking animation */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 
 
 table {
