@@ -1,23 +1,21 @@
 {
-    "name": "Weather up",
-    "short_name": "Weather up",
-    "start_url": "./index.html",
-    "display": "standalone",
-    "background_color": "#f5f5f5",
-    "theme_color": "#f5f5f5",
-    "description": "The site offers information on curated remedies tailored for maximum impact on your farm.",
-    "icons": [
-      {
-        "src": "../images/Landing1jpg",
-        "sizes": "192x192",
-        "type": "image/png"
-        
-      },
-      {
-        "src": "../images/Landing1jpg",
-        "sizes": "512x512",
-        "type": "image/png"
-        
-      }
-    ]
-  }
+  "name": "Weather up",
+  "short_name": "Weather up",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4CAF50",
+  "description": "The site offers information on curated remedies tailored for maximum impact on your farm.",
+  "icons": [
+    {
+      "src": "./images/Landing1jpg",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/Landing1jpg",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
