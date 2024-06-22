@@ -15,7 +15,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #f5f5f5;
+    background:linear-gradient(to right,#7F7FD5    ,  #91EAE4);
     height: 130vh;
     border-radius: 18px;
     width: 300px;
