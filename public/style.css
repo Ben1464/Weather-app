@@ -15,12 +15,28 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background:linear-gradient(to right,#d2ffff     , #0694c6);
+    background: linear-gradient(to right, #87ceeb, #ffe135); /* Sunny/Day gradient */
     height: 130vh;
     border-radius: 18px;
     width: 300px;
     box-shadow: #333 0px 0px 10px;
-    /* width: 100%; */
+    animation: gradientChange 45s infinite; /* Added animation */
+}
+
+/* Define keyframes for gradient change */
+@keyframes gradientChange {
+    0% {
+        background: linear-gradient(to right, #87ceeb, #ffe135); /* Sunny/Day */
+    }
+    33% {
+        background: linear-gradient(to right, #d3d3d3, #a9a9a9); /* Cloudy */
+    }
+    66% {
+        background: linear-gradient(to right, #add8e6, #00008b); /* Rainy */
+    }
+    100% {
+        background: linear-gradient(to right, #87ceeb, #ffe135); /* Sunny/Day */
+    }
 }
 
 .weather {
@@ -107,8 +123,6 @@ h3 {
     100% { opacity: 1; }
 } */
 
-
-
 table {
     border-collapse: collapse;
     width: 100%;
@@ -133,6 +147,7 @@ tbody tr:nth-child(even) {
 tbody tr:hover {
     background-color: #ddd;
 }
+
 th, td {
     padding: 8px;
     text-align: left;
@@ -145,23 +160,16 @@ td:last-child {
     border-right: none; /* Remove border for the last column */
 }
 
-
-h2{
+h2 {
     text-align: center;
 }
-
-/* Define blinking animation */
-/* @keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
-} */
 
 /* Apply animation to the blinking link */
 .blinking-link {
     animation: blink 1s infinite;
     text-align: center;
 }
-.footer{
+
+.footer {
     text-align: center;
 }
