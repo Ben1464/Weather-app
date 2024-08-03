@@ -20,7 +20,7 @@ body {
     border-radius: 18px;
     width: 300px;
     box-shadow: #333 0px 0px 10px;
-    animation: gradientChange 45s infinite; /* Added animation */
+    animation: gradientChange 60s infinite; /* Updated animation duration */
 }
 
 /* Define keyframes for gradient change */
@@ -28,11 +28,14 @@ body {
     0% {
         background: linear-gradient(to right, #87ceeb, #ffe135); /* Sunny/Day */
     }
-    33% {
+    25% {
         background: linear-gradient(to right, #d3d3d3, #a9a9a9); /* Cloudy */
     }
-    66% {
-        background: linear-gradient(to right, #add8e6, #3131af); /* Rainy */
+    50% {
+        background: linear-gradient(to right, #add8e6, #5252e7); /* Rainy */
+    }
+    75% {
+        background: linear-gradient(to right, #b0e0e6, #ffffff); /* Windy */
     }
     100% {
         background: linear-gradient(to right, #87ceeb, #ffe135); /* Sunny/Day */
