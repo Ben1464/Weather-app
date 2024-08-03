@@ -32,7 +32,7 @@ body {
         background: linear-gradient(to right, #d3d3d3, #a9a9a9); /* Cloudy */
     }
     66% {
-        background: linear-gradient(to right, #add8e6, #00008b); /* Rainy */
+        background: linear-gradient(to right, #add8e6, #3131af); /* Rainy */
     }
     100% {
         background: linear-gradient(to right, #87ceeb, #ffe135); /* Sunny/Day */
