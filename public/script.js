@@ -1,5 +1,6 @@
 const cityInput = document.getElementById('city');
 const searchButton = document.getElementById('search-button');
+const cityNameDisplay = document.getElementById('city-name');
 const temperatureDisplay = document.getElementById('temperature');
 const humidityDisplay = document.getElementById('humidity');
 const rainRateDisplay = document.getElementById('rain-rate');
@@ -97,6 +98,7 @@ searchButton.addEventListener('click', async () => {
         const forecastData = await fetchForecast(cityName);
         updateForecastTable(forecastData);
 
+        cityNameDisplay.textContent = cityName;
         cityInput.value = '';
     } else {
         alert('Please enter a city name.');
