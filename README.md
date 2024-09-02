@@ -19,9 +19,9 @@
 
 
 
-![GitHub repo size](https://img.shields.io/github/repo-size/Ben1464/Weather app?style=plastic)
+![GitHub repo size](https://img.shields.io/github/repo-size/Ben1464/Weather-app?style=plastic)
 
-  ![GitHub top language](https://img.shields.io/github/languages/top/Ben1464/Weather app?style=plastic)
+  ![GitHub top language](https://img.shields.io/github/languages/top/Ben1464/Weather-app?style=plastic)
 
 
 
